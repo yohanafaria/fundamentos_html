@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Yoyo">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Universe</title>
 </head>
 
 <body>
-    <header>
-        <div id="header_content">
+
+    <header class="flex menu_container">
+
+        <div id="header_content" class="menu_content">
+
             <div id="titulo">
+
                 <a href="#">Universe</a>
             </div>
-            <div id="menu">
+
+            <div id="menu" class="flex">
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -28,84 +43,99 @@
         </div>
     </header>
 
-    
+
     <main>
 
-        <section id="home">
+        <section id="home" class="home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="home_content">
+
                 <h4>Bem-vindo ao Novo Universo</h4>
 
                 <h1>Mundos diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
                     quisquam</p>
-                <a target="_blank" href="https://github.com/yohanafaria" alt="Github de Yohana Faria">
+                <a class="botao" target="_blank" href="https://github.com/yohanafaria">
+                    Explorar
+                </a>
+
+            </article>
+            <article id="home_imagem" class="home_content">
+                <img class="home_content_img" src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
             </article>
 
-            <article id="home_imagem">
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado" width="300">
-            </article>
         </section>
 
-        <section id="about">
-
-            <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
-
-            <article id="sobre_texto">
-                <h1>Sobre mim</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quibusdam odit voluptates incidunt inventore rem error harum
-                    blanditiis accusamus vitae, minus fugit consequatur?
-                    Dolorum maiores magni deleniti modi sit laudantium totam!
-                </p>
-
-                <div id="sobre_github">
-                    <a target="_blank" href="https://github.com/yohanafaria">Github</a>
-                    <p>1 Seguidor</p>
-                    <p>8 Repositórios</p>
-
-                </div>
-            </article>
+        <section id="about" class="sobre_container">
         </section>
 
-        <section id="contact">
-            <article id="redes_sociais">
-                <h4>Contate-me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod error veniam in voluptatem magni quisquam</p>
-                <div id="icones_redes_sociais">
-                    <a href="">
-                        <img src="" alt="" width="">:
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
-                </div>
-            </article>
+        <section id="contact" class="contato_container">
+
+            <article id="redes_sociais" class="contato_content">
+
+                <img src="assets/img/user_01.svg" alt="Foto do Perfil do Github" width="450px">
+
+                <article id="sobre_texto">
+                    <h1>Sobre mim</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quibusdam odit voluptates incidunt inventore rem error harum
+                        blanditiis accusamus vitae, minus fugit consequatur?
+                        Dolorum maiores magni deleniti modi sit laudantium totam!
+                    </p>
+
+                    <div id="sobre_github">
+                        <a target="_blank" href="https://github.com/yohanafaria">Github</a>
+                        <p>1 Seguidor</p>
+                        <p>8 Repositórios</p>
+
+                    </div>
+                </article>
+        </section>
+
+        <h4>Contate-me</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quod error veniam in voluptatem magni quisquam</p>
+
+        <div id="icones_redes_sociais" class="flex social_container">
+            <a href="">
+                <img class="social_icon" src="assets/img/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="">
+                <img class="social_icon" src="assets/img/github.svg" alt="Github" />
+            </a>
+            <a href="">
+                <img class="social_icon" src="assets/img/instagram.svg" alt="Instagram" />
+            </a>
+        </div>
+
+    </article>
 
 
-            <form action="" method="POST">
-                <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome">
-                <span id="txtNome"></span>
+    <form id="formulario" action="https://formsubmit.co/7065d88cfa92a310a1da3b7a5effb0c9" method="POST">
 
-                <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email">
-                <span id="txtEmail"></span>
+        <input type="hidden" name="_next" value="https://yohanafaria.github.io/fundamentos_html/sucess.html">
+        <input type="hidden" name="_captcha" value="false">
 
-                <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
-                <span id="txtSubject"></span>
+        <label for="nome">Nome: </label>
+        <input id="name" type="text" name="name" placeholder="Digite seu nome" >
+        <span id="txtNome"></span>
 
-                <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <label for="email">Email: </label>
+        <input id="email" type="text" name="email" placeholder="Digite seu email" >
+        <span id="txtEmail"></span>
+
+        <label for="subject">Assunto: </label>
+        <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" >
+        <span id="txtSubject"></span>
+
+        <label for="message">Mensagem: </label>
+        <textarea id="message" name="message" placeholder="Digite sua mensagem" ></textarea>
+        <span id="txtMensagem"></span>
+
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
         </section>
     </main>
 
@@ -114,5 +144,7 @@
             <p>Site desenvolvido por Yoyo</p>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
